@@ -1,24 +1,13 @@
-# README
+# HOTWIRE CHAT APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Everyone's hero DHH just released HOTWIRE (html over the wire).
 
-Things you may want to cover:
+This repo is just the code form the video presentation.
 
-* Ruby version
+- Ruby version: 2.7.2
 
-* System dependencies
+- dependencies: Redis-server
 
-* Configuration
+- run: redis-server and rails s in the folder to start dev server
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- ...
