@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<%= turbo_stream_from @article %>
+
+<%= turbo_frame_tag "article" do %>
+  <%= render @article %>
+  <p>
+    <%= link_to 'Back', articles_path, "data-turbo-frame": "_top" %>
+  </p>
+<% end %>
+
+<div id="comments">
+  <%= render @article.comments %>
+</div>
+<%= turbo_frame_tag "new_comment", src: new_article_comment_path(@article), target: "_top" %>
